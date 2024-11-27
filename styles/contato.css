@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F5EDED;
+}
+
+ol,
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    color: #F5EDED;
+    text-decoration: none;
+}
+
+.contato__cabecalho {
+    background-color: #293B5F;
+    font-family: "Playfair Display", serif;
+}
+
+.cabecalho__navegacao {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navegacao__logotipo {
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.logotipo__img {
+    height: 40px;
+    width: 40px;
+}
+
+.logotipo__texto__alternativo {
+    color: #F5EDED;
+    font-size: 1rem;
+}
+
+.navegacao__lista {
+    padding: 10px;
+    display: flex;
+    gap: 32px;
+    font-size: 1rem;
+}
+
+.cabecalho__localizacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.localizacao__titulo {
+    margin: 40px;
+    color: #AEBDCA;
+}
+
+.cabecalho__reservas {
+    background-color: #293B5F;
+    margin: 32px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reservas__botao {
+    background-color: transparent;
+    padding: 5px 30px;
+    border: 1px solid #F5EDED;
+    border-radius: 3px;
+}
+
+.principal__info {
+    margin: 80px;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    text-align: center;
+}
+
+.info__dados,
+.info__funcionamento {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.dados__titulo,
+.funcionamento__titulo {
+    color: #28527A;
+    font-family: "Playfair Display", serif;
+    font-weight: normal;
+}
+
+.dados__texto,
+.funcionamento__texto {
+    color: #555555;
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.75rem;
+}
+
+.principal__ilustracao {
+    background-color: #E2DAD6;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Playfair Display", serif;
+}
+
+.ilustracao__img {
+    padding-top: 80px;
+    height: 500px;
+    width: 600px;
+}
+
+.ilustracao__descricao {
+    padding-bottom: 80px;
+    color: #777777;
+    font-size: 0.75rem;
+    font-weight: normal;
+}
+
+.principal__experiencia {
+    display: flex;
+    justify-content: center;
+}
+
+.experiencia__texto {
+    margin: 0;
+    padding: 80px;
+    width: 800px;
+    color: #28527A;
+    text-align: left;
+    text-align: justify;
+    font-family: "Playfair Display", serif;
+    font-size: 1rem;
+}
+
+.principal__ambiente {
+    display: flex;
+    justify-content: center;
+}
+
+.ambiente__texto {
+    margin: 0;
+    padding: 80px;
+    width: 800px;
+    color: #28527A;
+    text-align: left;
+    text-align: justify;
+    font-family: "Playfair Display", serif;
+    font-size: 1rem;
+}
+
+.contato__rodape {
+    background-color: #E2DAD6;
+    display: flex;
+    justify-content: center;
+}
+
+.rodape__texto {
+    margin: 0;
+    padding: 20px;
+    color: #293B5F;
+    font-size: 0.75rem;
+}

@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F5EDED;
+}
+
+ol,
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    color: #F5EDED;
+    text-decoration: none;
+}
+
+.sobre__cabecalho {
+    background-image: url(/assets/ramyeon-capa.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    font-family: "Playfair Display", serif;
+}
+
+.cabecalho__navegacao {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navegacao__logotipo {
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.logotipo__img {
+    height: 40px;
+    width: 40px;
+}
+
+.logotipo__texto__alternativo {
+    color: #F5EDED;
+    font-size: 1rem;
+}
+
+.navegacao__lista {
+    padding: 10px;
+    display: flex;
+    gap: 32px;
+    font-size: 1rem;
+}
+
+.cabecalho__banner {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #F5EDED;
+}
+
+.banner__titulo {
+    background-color: transparent;
+    margin: 0;
+    padding: 20px 80px;
+    border: 3px solid #F5EDED;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.principal__historia {
+    background-color: #293B5F;
+    display: flex;
+    justify-content: center;
+}
+
+.historia__texto {
+    margin: 0;
+    padding: 80px;
+    width: 900px;
+    color: #AEBDCA;
+    text-align: left;
+    text-align: justify;
+    font-family: "Playfair Display", serif;
+    font-size: 1rem;
+}
+
+.sobre__rodape {
+    background-color: #E2DAD6;
+    display: flex;
+    justify-content: center;
+}
+
+.rodape__texto {
+    margin: 0;
+    padding: 20px;
+    color: #293B5F;
+    font-size: 0.75rem;
+}
