@@ -17,19 +17,34 @@ li {
 }
 
 a {
-    color: #F5EDED;
+    color: #FFFFFF;
     text-decoration: none;
 }
 
 .pagina__inicial__cabecalho {
+    position: relative;
     background-image: url(/assets/ramyeon-capa.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 500px;
+    height: 600px;
     display: flex;
     flex-direction: column;
-    font-family: "Playfair Display", serif;
+    gap: 40px;
+}
+
+.pagina__inicial__cabecalho::before {
+    background-color: rgba(31, 56, 80, 0.4);
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.cabecalho__navegacao,
+.cabecalho__banner,
+.cabecalho__reservas {
+    z-index: 2;
 }
 
 .cabecalho__navegacao {
@@ -39,27 +54,34 @@ a {
 
 .navegacao__logotipo {
     margin: 0;
-    padding: 10px;
     display: flex;
     align-items: center;
     gap: 8px;
 }
 
 .logotipo__img {
-    height: 40px;
-    width: 40px;
+    padding: 8px 4px 8px 12px;
+    height: 56px;
+    width: 56px;
 }
 
 .logotipo__texto__alternativo {
-    color: #F5EDED;
-    font-size: 1rem;
+    margin: 0;
+    padding: 16px 12px;
+    color: #FFFFFF;
+    font-family: "Playfair Display", serif;
+    font-size: 24px;
+    font-weight: 700;
 }
 
 .navegacao__lista {
-    padding: 10px;
+    padding: 10px 12px;
     display: flex;
     gap: 32px;
-    font-size: 1rem;
+    color: #FFFFFFDE;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
 }
 
 .cabecalho__banner {
@@ -68,24 +90,26 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: #F5EDED;
+    color: #FFFFFF;
+    font-family: "Playfair Display", serif;
 }
 
 .banner__titulo {
     background-color: transparent;
     margin: 0;
-    padding: 20px 80px;
-    border: 3px solid #F5EDED;
+    padding: 44px 56px;
+    border: 5px solid #FFFFFF;
     text-align: center;
-    font-size: 2rem;
+    font-size: 72px;
+    font-weight: 700;
 }
 
 .banner__slogan {
-    font-size: 1rem;
+    font-size: 12px;
 }
 
 .cabecalho__reservas {
-    background-color: #293B5F;
+    background-color: rgba(31, 56, 80, 1);
     height: 70px;
     display: flex;
     justify-content: center;
@@ -94,9 +118,13 @@ a {
 
 .reservas__botao {
     background-color: transparent;
+    margin: 40px;
     padding: 5px 30px;
-    border: 1px solid #F5EDED;
+    border: 1px solid #FFFFFF;
     border-radius: 3px;
+    color: #FFFFFF;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
 }
 
 .principal__ramyeon {
@@ -104,7 +132,6 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: "Playfair Display", serif;
 }
 
 .ramyeon__img {
@@ -113,9 +140,9 @@ a {
 }
 
 .ramyeon__descricao {
-    color: #777777;
-    font-size: 0.75rem;
-    font-weight: normal;
+    color: #212121;
+    font-family: "Playfair Display", serif;
+    font-size: 12px;
 }
 
 .principal__boas__vindas {
@@ -125,49 +152,41 @@ a {
 .boas__vindas__texto {
     margin: 0;
     padding: 80px;
-    color: #28527A;
+    color: rgba(0, 48, 95, 1);
     text-align: center;
     font-family: "Playfair Display", serif;
-    font-size: 1.25rem;
+    font-size: 24px;
+    font-weight: 400;
 }
 
 .principal__avaliacoes {
-    background-color: #293B5F;
+    background-color: rgba(31, 56, 80, 1);
+    padding: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .avaliacoes__titulo {
-    color: #AEBDCA;
+    color: rgba(187, 204, 214, 1);
     font-family: "Playfair Display", serif;
-    font-size: 1.5rem;
-    font-weight: normal;
+    font-size: 24px;
+    font-weight: 400;
 }
 
 .avaliacoes__lista {
     padding: 0;
     display: flex;
     gap: 64px;
-    color: #E2DAD6;
+    text-align: center;
+    color: #E1DFDB;
     font-family: "Open Sans", sans-serif;
-    font-size: 0.70rem;
+    font-size: 14px;
+    font-weight: 400;
 }
 
 .avaliacoes__elemento {
-    height: 250px;
-}
-
-.avaliacao__nome {
-    text-align: left;
-}
-
-.avaliacao__estrelas {
-    text-align: left;
-}
-
-.avaliacao__comentario {
-    text-align: justify;
+    height: 300px;
 }
 
 .ilustracao__img {
@@ -184,6 +203,6 @@ a {
 .rodape__texto {
     margin: 0;
     padding: 20px;
-    color: #293B5F;
-    font-size: 0.75rem;
+    color: rgba(0, 48, 95, 1);
+    font-size: 12px;
 }
