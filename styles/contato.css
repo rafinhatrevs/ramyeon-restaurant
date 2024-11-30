@@ -17,13 +17,16 @@ li {
 }
 
 a {
-    color: #F5EDED;
+    color: #E1DFDB;
     text-decoration: none;
 }
 
 .contato__cabecalho {
-    background-color: #293B5F;
-    font-family: "Playfair Display", serif;
+    background-color: rgba(31, 56, 80, 1);
+    height: 750px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 }
 
 .cabecalho__navegacao {
@@ -33,27 +36,34 @@ a {
 
 .navegacao__logotipo {
     margin: 0;
-    padding: 10px;
     display: flex;
     align-items: center;
     gap: 8px;
 }
 
 .logotipo__img {
-    height: 40px;
-    width: 40px;
+    padding: 8px 4px 8px 12px;
+    height: 56px;
+    width: 56px;
 }
 
 .logotipo__texto__alternativo {
-    color: #F5EDED;
-    font-size: 1rem;
+    margin: 0;
+    padding: 16px 12px;
+    color: #E1DFDB;
+    font-family: "Playfair Display", serif;
+    font-size: 24px;
+    font-weight: 700;
 }
 
 .navegacao__lista {
-    padding: 10px;
+    padding: 10px 12px;
     display: flex;
     gap: 32px;
-    font-size: 1rem;
+    color: #E1DFDB;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
 }
 
 .cabecalho__localizacao {
@@ -64,14 +74,14 @@ a {
 }
 
 .localizacao__titulo {
-    margin: 40px;
-    color: #AEBDCA;
+    color: rgba(187, 204, 214, 1);
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    font-weight: 400;
 }
 
 .cabecalho__reservas {
-    background-color: #293B5F;
-    margin: 32px;
-    height: 70px;
+    background-color: rgba(31, 56, 80, 1);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -80,15 +90,17 @@ a {
 .reservas__botao {
     background-color: transparent;
     padding: 5px 30px;
-    border: 1px solid #F5EDED;
+    border: 1px solid #E1DFDB;
     border-radius: 3px;
+    color: #E1DFDB;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
 }
 
 .principal__info {
     margin: 80px;
     display: flex;
     justify-content: center;
-    gap: 16px;
     text-align: center;
 }
 
@@ -101,16 +113,18 @@ a {
 
 .dados__titulo,
 .funcionamento__titulo {
-    color: #28527A;
-    font-family: "Playfair Display", serif;
-    font-weight: normal;
+    color: rgba(6, 65, 124, 1);
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    font-weight: 400;
 }
 
 .dados__texto,
 .funcionamento__texto {
-    color: #555555;
-    font-family: "Open Sans", sans-serif;
-    font-size: 0.75rem;
+    color: rgba(33, 33, 33, 1);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
 }
 
 .principal__ilustracao {
@@ -119,52 +133,38 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: "Playfair Display", serif;
 }
 
 .ilustracao__img {
     padding-top: 80px;
     height: 500px;
-    width: 600px;
+    width: 700px;
 }
 
 .ilustracao__descricao {
     padding-bottom: 80px;
-    color: #777777;
-    font-size: 0.75rem;
-    font-weight: normal;
-}
-
-.principal__experiencia {
-    display: flex;
-    justify-content: center;
-}
-
-.experiencia__texto {
-    margin: 0;
-    padding: 80px;
-    width: 800px;
-    color: #28527A;
-    text-align: left;
-    text-align: justify;
+    color: #212121;
     font-family: "Playfair Display", serif;
-    font-size: 1rem;
+    font-size: 12px;
+    font-weight: 400;
 }
 
+.principal__experiencia,
 .principal__ambiente {
     display: flex;
     justify-content: center;
 }
 
+.experiencia__texto,
 .ambiente__texto {
     margin: 0;
     padding: 80px;
     width: 800px;
-    color: #28527A;
-    text-align: left;
     text-align: justify;
-    font-family: "Playfair Display", serif;
-    font-size: 1rem;
+    color: rgba(6, 65, 124, 1);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
 }
 
 .contato__rodape {
@@ -176,6 +176,8 @@ a {
 .rodape__texto {
     margin: 0;
     padding: 20px;
-    color: #293B5F;
-    font-size: 0.75rem;
+    color: rgba(0, 48, 95, 1);
+    font-family: 'Playfair Display', serif;
+    font-size: 12px;
+    font-weight: 400;
 }

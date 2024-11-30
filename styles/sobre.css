@@ -17,11 +17,12 @@ li {
 }
 
 a {
-    color: #F5EDED;
+    color: #E1DFDB;
     text-decoration: none;
 }
 
 .sobre__cabecalho {
+    position: relative;
     background-image: url(/assets/ramyeon-capa.jpg);
     background-size: cover;
     background-position: center;
@@ -29,7 +30,19 @@ a {
     height: 400px;
     display: flex;
     flex-direction: column;
-    font-family: "Playfair Display", serif;
+}
+
+.sobre__cabecalho::before {
+    background-color: rgba(31, 56, 80, 0.7);
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.cabecalho__navegacao,
+.cabecalho__banner {
+    z-index: 2;
 }
 
 .cabecalho__navegacao {
@@ -39,48 +52,58 @@ a {
 
 .navegacao__logotipo {
     margin: 0;
-    padding: 10px;
     display: flex;
     align-items: center;
     gap: 8px;
 }
 
 .logotipo__img {
-    height: 40px;
-    width: 40px;
+    padding: 8px 4px 8px 12px;
+    height: 56px;
+    width: 56px;
 }
 
 .logotipo__texto__alternativo {
-    color: #F5EDED;
-    font-size: 1rem;
+    margin: 0;
+    padding: 16px 12px;
+    color: #E1DFDB;
+    font-family: "Playfair Display", serif;
+    font-size: 24px;
+    font-weight: 700;
 }
 
 .navegacao__lista {
-    padding: 10px;
+    padding: 10px 12px;
     display: flex;
     gap: 32px;
-    font-size: 1rem;
+    color: #E1DFDB;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
 }
 
 .cabecalho__banner {
     flex-grow: 1;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: #F5EDED;
+    color: #E1DFDB;
+    font-family: "Playfair Display", serif;
 }
 
 .banner__titulo {
     background-color: transparent;
     margin: 0;
-    padding: 20px 80px;
-    border: 3px solid #F5EDED;
+    padding: 44px 56px;
+    border: 5px solid #E1DFDB;
     text-align: center;
-    font-size: 2rem;
+    font-size: 72px;
+    font-weight: 700;
 }
 
 .principal__historia {
-    background-color: #293B5F;
+    background-color: rgba(31, 56, 80, 1);
     display: flex;
     justify-content: center;
 }
@@ -88,12 +111,12 @@ a {
 .historia__texto {
     margin: 0;
     padding: 80px;
-    width: 900px;
-    color: #AEBDCA;
-    text-align: left;
+    width: 1000px;
+    color: rgba(187, 204, 214, 1);
     text-align: justify;
-    font-family: "Playfair Display", serif;
-    font-size: 1rem;
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    font-weight: 400;
 }
 
 .sobre__rodape {
@@ -105,6 +128,8 @@ a {
 .rodape__texto {
     margin: 0;
     padding: 20px;
-    color: #293B5F;
-    font-size: 0.75rem;
+    color: rgba(0, 48, 95, 1);
+    font-family: 'Playfair Display', serif;
+    font-size: 12px;
+    font-weight: 400;
 }

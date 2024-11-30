@@ -17,13 +17,12 @@ li {
 }
 
 a {
-    color: #F5EDED;
+    color: #E1DFDB;
     text-decoration: none;
 }
 
 .chef__cabecalho {
-    background-color: #293B5F;
-    font-family: "Playfair Display", serif;
+    background-color: rgba(31, 56, 80, 1);
 }
 
 .cabecalho__navegacao {
@@ -33,150 +32,113 @@ a {
 
 .navegacao__logotipo {
     margin: 0;
-    padding: 10px;
     display: flex;
     align-items: center;
     gap: 8px;
 }
 
 .logotipo__img {
-    height: 40px;
-    width: 40px;
+    padding: 8px 4px 8px 12px;
+    height: 56px;
+    width: 56px;
 }
 
 .logotipo__texto__alternativo {
-    color: #F5EDED;
-    font-size: 1rem;
+    margin: 0;
+    padding: 16px 12px;
+    color: #E1DFDB;
+    font-family: "Playfair Display", serif;
+    font-size: 24px;
+    font-weight: 700;
 }
 
 .navegacao__lista {
-    padding: 10px;
+    padding: 10px 12px;
     display: flex;
     gap: 32px;
-    font-size: 1rem;
+    color: #E1DFDB;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
 }
 
 .cabecalho__titulo {
     display: flex;
     justify-content: center;
-    color: #AEBDCA;
 }
 
 .titulo__chef {
     margin: 40px;
+    color: rgba(187, 204, 214, 1);
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    font-weight: 400;
 }
 
 .principal__min-jun {
-    background-color: #293B5F;
+    background-color: rgba(31, 56, 80, 1);
     margin: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: "Playfair Display", serif;
 }
 
 .min-jun__img {
     height: 800px;
-    width: 600px;
+    width: 700px;
 }
 
 .min-jun__descricao {
     margin-bottom: 80px;
-    color: #F5EDED;
-    font-size: 0.75rem;
-    font-weight: normal;
+    color: rgba(225, 223, 219, 1);
+    font-family: "Playfair Display", serif;
+    font-size: 12px;
+    font-weight: 400;
 }
 
-.principal__biografia {
+.principal__biografia,
+.principal__culinaria,
+.principal__equipe {
     display: flex;
     justify-content: center;
 }
 
-.biografia__texto {
+.biografia__texto,
+.culinaria__texto,
+.equipe__texto {
     margin: 0;
     padding: 80px;
     width: 800px;
-    color: #28527A;
-    text-align: left;
     text-align: justify;
-    font-family: "Playfair Display", serif;
-    font-size: 1rem;
+    color: rgba(6, 65, 124, 1);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
 }
 
-.principal__ilustracao {
-    background-color: #E2DAD6;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: "Playfair Display", serif;
-}
-
-.ilustracao__img {
-    padding-top: 80px;
-    height: 500px;
-    width: 600px;
-}
-
-.ilustracao__descricao {
-    padding-bottom: 80px;
-    color: #777777;
-    font-size: 0.75rem;
-    font-weight: normal;
-}
-
-.principal__culinaria {
-    display: flex;
-    justify-content: center;
-}
-
-.culinaria__texto {
-    margin: 0;
-    padding: 80px;
-    width: 800px;
-    color: #28527A;
-    text-align: left;
-    text-align: justify;
-    font-family: "Playfair Display", serif;
-    font-size: 1rem;
-}
-
+.principal__ilustracao,
 .principal__video {
     background-color: #E2DAD6;
     margin: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: "Playfair Display", serif;
 }
 
+.ilustracao__img,
 video {
     padding-top: 80px;
     height: 500px;
-    width: 600px;
+    width: 700px;
 }
 
+.ilustracao__descricao,
 .video__descricao {
     padding-bottom: 80px;
-    color: #777777;
-    font-size: 0.75rem;
-    font-weight: normal;
-}
-
-.principal__equipe {
-    display: flex;
-    justify-content: center;
-}
-
-.equipe__texto {
-    margin: 0;
-    padding: 80px;
-    width: 800px;
-    color: #28527A;
-    text-align: left;
-    text-align: justify;
+    color: #212121;
     font-family: "Playfair Display", serif;
-    font-size: 1rem;
+    font-size: 12px;
+    font-weight: 400;
 }
 
 .chef__rodape {
@@ -188,6 +150,8 @@ video {
 .rodape__texto {
     margin: 0;
     padding: 20px;
-    color: #293B5F;
-    font-size: 0.75rem;
+    color: rgba(0, 48, 95, 1);
+    font-family: 'Playfair Display', serif;
+    font-size: 12px;
+    font-weight: 400;
 }

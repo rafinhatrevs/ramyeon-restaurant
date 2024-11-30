@@ -17,13 +17,12 @@ li {
 }
 
 a {
-    color: #F5EDED;
+    color: #E1DFDB;
     text-decoration: none;
 }
 
 .cardapio__cabecalho {
-    background-color: #293B5F;
-    font-family: "Playfair Display", serif;
+    background-color: rgba(31, 56, 80, 1);
 }
 
 .cabecalho__navegacao {
@@ -33,41 +32,51 @@ a {
 
 .navegacao__logotipo {
     margin: 0;
-    padding: 10px;
     display: flex;
     align-items: center;
     gap: 8px;
 }
 
 .logotipo__img {
-    height: 40px;
-    width: 40px;
+    padding: 8px 4px 8px 12px;
+    height: 56px;
+    width: 56px;
 }
 
 .logotipo__texto__alternativo {
-    color: #F5EDED;
-    font-size: 1rem;
+    margin: 0;
+    padding: 16px 12px;
+    color: #E1DFDB;
+    font-family: "Playfair Display", serif;
+    font-size: 24px;
+    font-weight: 700;
 }
 
 .navegacao__lista {
-    padding: 10px;
+    padding: 10px 12px;
     display: flex;
     gap: 32px;
-    font-size: 1rem;
+    color: #E1DFDB;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
 }
 
 .cabecalho__titulo {
     display: flex;
     justify-content: center;
-    color: #AEBDCA;
 }
 
 .titulo__cardapio {
     margin: 40px;
+    color: rgba(187, 204, 214, 1);
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    font-weight: 400;
 }
 
 .cabecalho__reservas {
-    background-color: #293B5F;
+    background-color: rgba(31, 56, 80, 1);
     height: 70px;
     display: flex;
     justify-content: center;
@@ -77,8 +86,11 @@ a {
 .reservas__botao {
     background-color: transparent;
     padding: 5px 30px;
-    border: 1px solid #F5EDED;
+    border: 1px solid #E1DFDB;
     border-radius: 3px;
+    color: #E1DFDB;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
 }
 
 .principal__pratos {
@@ -107,21 +119,26 @@ a {
 
 .ilustracao__descricao {
     text-align: center;
-    color: #777777;
-    font-size: 0.75rem;
-    font-weight: normal;
+    color: #212121;
+    font-family: "Playfair Display", serif;
+    font-size: 12px;
+    font-weight: 400;
 }
 
 .texto__categoria {
-    color: #28527A;
-    font-family: "Open Sans", sans-serif;
-    font-weight: normal;
+    color: rgba(6, 65, 124, 1);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
 }
 
 .texto__lista {
     padding: 0;
     width: 500px;
-    color: #555555;
+    color: rgba(33, 33, 33, 1);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
 }
 
 .principal__contato {
@@ -131,10 +148,11 @@ a {
 .contato__texto {
     margin: 0;
     padding: 20px;
-    color: #28527A;
     text-align: center;
-    font-family: "Open Sans", sans-serif;
-    font-size: 1rem;
+    color: rgba(6, 65, 124, 1);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
 }
 
 .principal__formulario {
@@ -146,9 +164,10 @@ a {
 }
 
 .formulario__titulo {
-    color: #28527A;
+    color: rgba(6, 65, 124, 1);
     font-family: "Playfair Display", serif;
-    font-weight: normal;
+    font-size: 24px;
+    font-weight: 400;
 }
 
 .form {
@@ -158,27 +177,31 @@ a {
     gap: 16px;
 }
 
-.form__elemento {
+.form__elemento,
+.form__caixatexto {
     background-color: transparent;
-    height: 32px;
-    border: 1px solid #28527A;
-    color: #28527A;
+    border: 1px solid rgba(6, 65, 124, 1);
+    color: rgba(6, 65, 124, 1);
     font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.form__elemento {
+    height: 32px;
 }
 
 .form__caixatexto {
-    background-color: transparent;
     height: 160px;
     resize: none;
-    border: 1px solid #28527A;
-    color: #28527A;
-    font-family: "Open Sans", sans-serif;
 }
 
 .form__elemento::placeholder,
 .form__caixatexto::placeholder {
-    color: #28527A;
+    color: rgba(6, 65, 124, 1);
     font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
 }
 
 .form__elemento:focus,
@@ -189,9 +212,11 @@ a {
 .form__botao {
     background-color: transparent;
     width: 200px;
-    border: 1px solid #28527A;
-    color: #28527A;
+    border: 1px solid rgba(6, 65, 124, 1);
+    color: rgba(6, 65, 124, 1);
     font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
     cursor: pointer;
 }
 
@@ -204,6 +229,8 @@ a {
 .rodape__texto {
     margin: 0;
     padding: 20px;
-    color: #293B5F;
-    font-size: 0.75rem;
+    color: rgba(0, 48, 95, 1);
+    font-family: 'Playfair Display', serif;
+    font-size: 12px;
+    font-weight: 400;
 }
